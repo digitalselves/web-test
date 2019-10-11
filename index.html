@@ -2,10 +2,8 @@
 <html>
 <head>
 	<title>Web Browser Midi Testing </title>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/dynamic.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 	<div class="title">
@@ -25,8 +23,21 @@
 				document.getElementById('report').innerHTML = 'does not';
 			}
 		</script>
+
 	</div>
-<!-- 
+
+
+<h2>Simple MIDI API Example</h2>
+
+  <p>Plug in your MIDI controller and see the data logged here</p>
+
+  <section id="midi-data">  
+    <ul></ul>
+  </section>
+
+
+<!-- 	</div>
+
 	 <div  class="application" onload="Application.init()">
         <canvas width="320" height="320" id="canvas">
         <span id="marker" style="position:relative; background:#ccc;"></span>
