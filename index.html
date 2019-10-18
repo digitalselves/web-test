@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Web Browser Midi Testing </title>
-	<link rel="stylesheet" href="css/style.css">
+	<title> Web Browser Midi Testing </title>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="sketch/p5.js"></script>
+    <script src="sketch/p5.dom.min.js"></script>
+    <script src="sketch/p5.sound.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
 </head>
 <body>
 	<div class="title">
-		<h1> H e l l o w o r l d 
+		<h1> Web Midi Test Page  
 	</div>
 
 	<div class="main">
@@ -24,21 +29,27 @@
 			}
 		</script>
 
+ 	</div>
+
+ 	<div class="body">
+
+	<h2>Simple MIDI API Example</h2>
+
+  		<p>Plug in your MIDI controller and see the data logged here</p>
+
+  		<section id="midi-data">  
+  		  <ul></ul>
+  		</section>
+
 	</div>
 
+	<div class="canvas">
 
-<h2>Simple MIDI API Example</h2>
+		v-a input axis
+		<script src="sketch/sketch.js"></script>
+	</div>
 
-  <p>Plug in your MIDI controller and see the data logged here</p>
-
-  <section id="midi-data">  
-    <ul></ul>
-  </section>
-
-
-<!-- 	</div>
-
-	 <div  class="application" onload="Application.init()">
+	<!--  <div class="application" onload="Application.init()">
         <canvas width="320" height="320" id="canvas">
         <span id="marker" style="position:relative; background:#ccc;"></span>
         </canvas>
