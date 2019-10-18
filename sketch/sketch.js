@@ -8,6 +8,7 @@ function draw() {
   background(0,0,95);
 
   showMousePosition();
+  displayMouseVal();
   // fillColour();
   drawAxes();
  
@@ -89,5 +90,21 @@ function fillColour() {
   noLoop();
 
 }
+
+function displayMouseVal() {
+
+  let valenceX = (2*mouseX/width)-1;
+  let arousalY = (2*mouseY/height)-1;
+  
+  var valenceText = document.getElementById("val");
+  valenceText.innerHTML = valenceX;
+  var arousalText = document.getElementById("arous");
+  arousalText.innerHTML = arousalY;
+
+document.addEventListener('click', displayMouseVal);
+
+}
+
+
 
 
