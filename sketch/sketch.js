@@ -96,12 +96,16 @@ function displayMouseVal() {
   let valenceX = (2*mouseX/width)-1;
   let arousalY = (2*mouseY/height)-1;
   
+  // if valence in range, update html span
+  if ((valenceX < 1 && valenceX > -1) && ( arousalY <1 && arousalY > -1)) { 
+  
   var valenceText = document.getElementById("val");
   valenceText.innerHTML = valenceX;
   var arousalText = document.getElementById("arous");
   arousalText.innerHTML = arousalY;
 
 document.addEventListener('click', displayMouseVal);
+  }
 
 }
 
