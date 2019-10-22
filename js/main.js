@@ -31,3 +31,9 @@ dataList.appendChild(newItem);
 function onMIDIFailure() {
   console.warn("Not recognising MIDI controller")
 }
+
+
+
+function buttonHandler() {
+  
+}
