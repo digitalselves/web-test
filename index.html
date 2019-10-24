@@ -41,22 +41,67 @@
   		  <ul></ul>
   		</section>
 
-	</div>
 
-	<div class="canvas + buttons">
 
-		v-a input axis:
-		<script src="sketch/sketch.js"></script>
+	<div id="generation">
+		<h2>
+		Valence and Arousal Generator
+		</h2>
+	
+
+		<button id="button" class="button">Click Me!</button>
+	
+		<p>
+			Random Valence Generated <span id='randomVal'></span>.
+		</p>
+		<p>
+			Random Arousal Generated <span id='randomArous'> </span>.
+		</p>
+
+
+	<script type="text/javascript">
+
+    function valenceClickHandler() {
+
+      var randomValSpan = document.getElementById('randomVal');
+
+        randomValSpan.innerHTML = (Math.random()*2)-1;
+    }
+
+
+
+    function arousalClickHandler() {
+    	var randomArousSpan = document.getElementById('randomArous');
+
+    	randomArousSpan.innerHTML = (Math.random()*2)-1;
+    }
+
+    var buttonGenerator = document.getElementById("button");
+    buttonGenerator.addEventListener("click", valenceClickHandler);
+    buttonGenerator.addEventListener("click", arousalClickHandler);
+
+
+	</script>
+	
+
+	<script src="sketch/sketch.js"></script>
+
 
 		<p>
-		Valence value: <span id="val"></span>
+		<h3>Valence arousal from the canvas: </h3>
+
+			<p>
+			Valence value: <span id="val"></span>
+			<p>
+			Arousal value: <span id="arous"></span>
 		<p>
-		Arousal value: <span id="arous"></span>
-		<p>
-		<button class ="button"> Click me! </button>
+		</p>
 	
 	</div>
 
+
+
+	</div>
 	<!--  <div class="application" onload="Application.init()">
         <canvas width="320" height="320" id="canvas">
         <span id="marker" style="position:relative; background:#ccc;"></span>

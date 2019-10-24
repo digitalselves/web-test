@@ -1,3 +1,17 @@
+  // var clicks=0;
+
+  //   function clickHandler() {
+  //     clicks++;
+  //     var numClicksSpan = document.getElementById('numClicks');
+
+  //       numClicksSpan.innerHTML = clicks;
+  //   }
+
+  //   var button = document.getElementById("clickMe");
+  //   button.addEventListener("click", clickHandler); // when button is clicked calls clickHandler fctn  
+
+
+
 var midi, data;
 // start talking to MIDI controller
 if (navigator.requestMIDIAccess) {
@@ -34,6 +48,16 @@ function onMIDIFailure() {
 
 
 
-function buttonHandler() {
-  
-}
+// var clicks=0;
+
+// function clickHandler() {
+//   clicks++;
+//   var numClicksSpan = document.getElementById('numClicks');
+//   if (clicks == 1)
+//     numClicksSpan.innerHTML = "once";
+//   else
+//     numClicksSpan.innerHTML = clicks + " times";
+// }
+
+// var button = document.getElementById("clickMe");
+// button.addEventListener("click", clickHandler); // when button is clicked calls clickHandler fctn  
