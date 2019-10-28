@@ -100,11 +100,11 @@ function displayMouseVal() {
   if ((valenceX < 1 && valenceX > -1) && ( arousalY <1 && arousalY > -1)) { 
   
   var valenceText = document.getElementById("val");
-  valenceText.innerHTML = valenceX;
+  valenceText.innerHTML = valenceX.toFixed(2);
   var arousalText = document.getElementById("arous");
-  arousalText.innerHTML = arousalY;
+  arousalText.innerHTML = arousalY.toFixed(2);
 
-document.addEventListener('click', displayMouseVal);
+  document.addEventListener('click', displayMouseVal);
   }
 
 }

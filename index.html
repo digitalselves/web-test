@@ -6,6 +6,8 @@
 	<script src="sketch/p5.js"></script>
     <script src="sketch/p5.dom.min.js"></script>
     <script src="sketch/p5.sound.min.js"></script>
+    <script src="composer/rhythm.js"></script>
+    <script src="composer/composer.js"></script>
 
 	<link rel="stylesheet" href="style.css">
 	<meta charset="utf-8">
@@ -52,10 +54,10 @@
 		<button id="button" class="button">Click Me!</button>
 	
 		<p>
-			Random Valence Generated <span id='randomVal'></span>.
+			Random Valence Generated <span id='randomVal'> </span>.
 		</p>
 		<p>
-			Random Arousal Generated <span id='randomArous'> </span>.
+			Random Arousal Generated <span id='randomArous'>  </span>.
 		</p>
 
 
@@ -65,7 +67,7 @@
 
       var randomValSpan = document.getElementById('randomVal');
 
-        randomValSpan.innerHTML = (Math.random()*2)-1;
+        randomValSpan.innerHTML = ((Math.random()*2)-1).toFixed(2);
     }
 
 
@@ -73,7 +75,7 @@
     function arousalClickHandler() {
     	var randomArousSpan = document.getElementById('randomArous');
 
-    	randomArousSpan.innerHTML = (Math.random()*2)-1;
+    	randomArousSpan.innerHTML = ((Math.random()*2)-1).toFixed(2);
     }
 
     var buttonGenerator = document.getElementById("button");
