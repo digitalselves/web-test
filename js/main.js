@@ -1,14 +1,35 @@
-  // var clicks=0;
 
-  //   function clickHandler() {
-  //     clicks++;
-  //     var numClicksSpan = document.getElementById('numClicks');
+//html updates
 
-  //       numClicksSpan.innerHTML = clicks;
-  //   }
+//  // Change button value on click.. 
+// document.getElementById("curtainInput").addEventListener(
+//   "click",
+//   function(event) {
+//     if (event.target.value === "Open Curtain") {
+//       event.target.value = "Close Curtain";
+//     } else {
+//       event.target.value = "Open Curtain";
+//     }
+//   },
+//   false
+// );
 
-  //   var button = document.getElementById("clickMe");
-  //   button.addEventListener("click", clickHandler); // when button is clicked calls clickHandler fctn  
+
+
+// var clicks=0;
+
+// function clickHandler() {
+//   clicks++;
+//   var numClicksSpan = document.getElementById('numClicks');
+//   if (clicks == 1)
+//     numClicksSpan.innerHTML = "once";
+//   else
+//     numClicksSpan.innerHTML = clicks + " times";
+// }
+
+// var button = document.getElementById("clickMe");
+// button.addEventListener("click", clickHandler); // when button is clicked calls clickHandler fctn  
+
 
 
 
@@ -46,18 +67,3 @@ function onMIDIFailure() {
   console.warn("Not recognising MIDI controller")
 }
 
-
-
-// var clicks=0;
-
-// function clickHandler() {
-//   clicks++;
-//   var numClicksSpan = document.getElementById('numClicks');
-//   if (clicks == 1)
-//     numClicksSpan.innerHTML = "once";
-//   else
-//     numClicksSpan.innerHTML = clicks + " times";
-// }
-
-// var button = document.getElementById("clickMe");
-// button.addEventListener("click", clickHandler); // when button is clicked calls clickHandler fctn  

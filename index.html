@@ -102,8 +102,30 @@
 	</div>
 
 
-
+	<div>
+		<input id="curtainInput" type="button" class="button" value="Open Curtain"></input>
 	</div>
+
+
+	<script type="text/javascript">
+
+		document.getElementById("curtainInput").addEventListener("click",
+  		function(event) {
+   		 if (event.target.value === "Open Curtain") {
+    	  event.target.value = "Close Curtain";
+    		} else {
+   	   event.target.value = "Open Curtain";
+  	  }
+  	},
+ 	false
+	);
+
+	</script>
+
+</div>
+
+
+	
 	<!--  <div class="application" onload="Application.init()">
         <canvas width="320" height="320" id="canvas">
         <span id="marker" style="position:relative; background:#ccc;"></span>
