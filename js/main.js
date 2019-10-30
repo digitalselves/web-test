@@ -32,7 +32,6 @@
 
 
 
-
 var midi, data;
 // start talking to MIDI controller
 if (navigator.requestMIDIAccess) {
