@@ -18,9 +18,9 @@ let loudness = Math.floor(arousalTestVal*10)/10*40+60;
 
 // create roughness // 
 function randomArray(size) {
-	var arrayOut[size] = [0];
-
-	for (var i =0; i < size ; i+=1){
+	var arrayOut = [];
+	var i;
+	for (i =0; i < size ; i++){
 		arrayOut[i] = Math.floor(Math.Random()* 10);
 	}
 
@@ -30,26 +30,26 @@ function randomArray(size) {
 console.log(randomArray(8));
 
 
-let activate1 = randomArray(8)
+// let activate1 = randomArray(8)
 
-for (var i =0; i <8; i+=1){
-	if (activate1[i] < roughness){
-		activate1[i] = 0;
-	}
-	else {
-		activate1[i] = 1;
-	}
-}
+// for (var i =0; i <8; i+=1){
+// 	if (activate1[i] < roughness){
+// 		activate1[i] = 0;
+// 	}
+// 	else {
+// 		activate1[i] = 1;
+// 	}
+// }
 
 
-let activate2 = randomArray(8)
+// let activate2 = randomArray(8)
 
-for (var i =0; i <8; i+=1){
-	if (activate2[i] < roughness){
-		activate2[i] = 0;
-	}
-	else {
-		activate2[i] = 1;
-	}
-}
+// for (var i =0; i <8; i+=1){
+// 	if (activate2[i] < roughness){
+// 		activate2[i] = 0;
+// 	}
+// 	else {
+// 		activate2[i] = 1;
+// 	}
+// }
 
