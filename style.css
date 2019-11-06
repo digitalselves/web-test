@@ -20,13 +20,14 @@ body {
 }
 
 h1 {
-	padding-bottom:2em; 
+	padding-bottom:0.5em; 
 	text-align: center;
 	font-size: 4em;
 }
 
-h2, p, ul {padding-bottom:1em;}
-h2 {text-align:center; font-size:2em;}
+h2, p, ul {padding-bottom:0.5em;}
+h2 {text-align:center; 
+  font-size:2em;}
 p {font-size:1.2em;}
 
 h3 {
@@ -75,6 +76,21 @@ h3 {
 
 .button:hover {
   background-color: green;
+}
+
+
+.button2 {
+  background-color: #ff5050;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #ff0000;
 }
 
 

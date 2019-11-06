@@ -8,6 +8,7 @@
     <script src="sketch/p5.sound.min.js"></script>
     <script src="composer/rhythm.js"></script>
     <script src="composer/composer.js"></script>
+    <script type="text/javascript" src="js/moods.js"></script>
 
 	<link rel="stylesheet" href="style.css">
 	<meta charset="utf-8">
@@ -34,7 +35,7 @@
  	</div>
 
  	<div class="body">
-
+<!-- 	midi receiver code >> not in use atm
 	<h2>Simple MIDI API Example</h2>
 
   		<p>Plug in your MIDI controller and see the data logged here</p>
@@ -42,6 +43,8 @@
   		<section id="midi-data">  
   		  <ul></ul>
   		</section>
+
+  -->
 
 
 
@@ -59,6 +62,10 @@
 		<p>
 			Random Arousal Generated <span id='randomArous'>  </span>.
 		</p>
+		<p>
+			Your random mood is .. <span id='label'> </span>
+		</p>
+
 
 
 	<script type="text/javascript">
@@ -78,9 +85,12 @@
     	randomArousSpan.innerHTML = ((Math.random()*2)-1).toFixed(2);
     }
 
+
+
     var buttonGenerator = document.getElementById("button");
     buttonGenerator.addEventListener("click", valenceClickHandler);
     buttonGenerator.addEventListener("click", arousalClickHandler);
+    buttonGenerator.addEventListener("click", MoodFinder.findMood(document.getElementById('randomVal'),document.getElementById('randomArous') ));
 
 
 	</script>
@@ -103,18 +113,18 @@
 
 
 	<div>
-		<input id="curtainInput" type="button" class="button2" value="Open Curtain"></input>
+		<input id="midiInput" type="button" class="button2" value="Start Midi"></input>
 	</div>
 
 
 	<script type="text/javascript">
 
-		document.getElementById("curtainInput").addEventListener("click",
+		document.getElementById("midiInput").addEventListener("click",
   		function(event) {
-   		 if (event.target.value === "Open Curtain") {
-    	  event.target.value = "Close Curtain";
+   		 if (event.target.value === "Start Midi") {
+    	  event.target.value = "Stop Midi";
     		} else {
-   	   event.target.value = "Open Curtain";
+   	   event.target.value = "Start Midi";
   	  }
   	},
  	false
